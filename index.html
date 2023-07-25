@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dyanmic Input</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="card mt-5">
+                <div class="card-header">
+                    Purchase Product
+                </div>
+                <div class="card-body">
+                    <form id="input-form">
+                        <div id="product_row1" class="row">
+                            <div class="col-md-7">
+                                <label>Product Name</label>
+                                <input id="name1" type="text" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label>Price</label>
+                                <input id="price1" type="number" class="form-control">
+                            </div>
+                            <div class="col-md-1">
+                                <br>
+                                <button onclick="delete_row('1')" type="button" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-end">
+                    <button onclick="add_more()" class="btn btn-dark">Add More</button>
+                    <button onclick="submit_form()" class="btn btn-info">Save</button>
+                </div>
+            </div>
+            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
